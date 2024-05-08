@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tomar Foto</title>
+        <link rel="stylesheet" href="/static/css/style.css">
+    </head>
+    <body>
+        <h1>Tomar Foto</h1>
+        <!-- Elemento de video para mostrar la cámara -->
+        <div class="photo-frame" style="display: none;">
+            <video id="video" class="camera-view" autoplay></video>
+        </div>
+        <br>
+        <button id="enableFrame">Habilitar marco</button>
+        <label for="photo-name" style="display: none;">Número de documento:</label>
+        <input type="text" id="photo-name" placeholder="Ingrese su documento" style="display: none;">
+        <div id="gallery"></div>
+        <button id="clearGallery" style="display: none;">Borrar todo</button>
+
+        <script src="/static/js/takePhoto.js"></script>
+    </body>
+</html>
